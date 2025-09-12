@@ -1,47 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latihan Bootstrap</title>
+    <title>Blog Elegan</title>
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-    <style>
-      body {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2eafc 100%);
-        min-height: 100vh;
-      }
-      .navbar {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      }
-      .blog-card {
-        border-radius: 1rem;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        transition: box-shadow 0.2s;
-      }
-      .blog-card:hover {
-        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-      }
-      .about-section {
-        background: #fff;
-        border-radius: 1rem;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        padding: 2rem;
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Blog Elegan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="#">Blog Elegan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#blog-list">Blog</a>
+              <a class="nav-link active" href="#blog-list">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -53,7 +33,7 @@
 
     <!-- Blog List -->
     <section id="blog-list" class="container py-5">
-      <h2 class="mb-4 fw-bold text-center">Daftar Blog</h2>
+      <h2 class="section-title text-center mb-5">Daftar Blog</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card blog-card h-100">
@@ -86,55 +66,57 @@
     </section>
 
     <!-- Blog Detail Modals -->
-    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModal1Label" aria-hidden="true">
+    <div class="modal fade" id="blogModal1" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="blogModal1Label">Mengenal Bootstrap 5</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title">Mengenal Bootstrap 5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <p>Bootstrap 5 adalah versi terbaru dari framework CSS Bootstrap yang menawarkan banyak fitur baru seperti utility API, penghapusan jQuery, dan peningkatan performa. Dengan Bootstrap, Anda dapat membuat website yang responsif, mobile-first, dan tampak profesional tanpa harus menulis banyak kode CSS dari awal.</p>
+            <p>Bootstrap 5 adalah versi terbaru dari framework CSS Bootstrap yang menawarkan banyak fitur baru seperti utility API, penghapusan jQuery, dan peningkatan performa.</p>
             <ul>
-              <li>Grid system yang fleksibel</li>
+              <li>Grid system fleksibel</li>
               <li>Komponen UI siap pakai</li>
-              <li>Customizable dengan Sass</li>
+              <li>Kustomisasi dengan Sass</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="blogModal2" tabindex="-1" aria-labelledby="blogModal2Label" aria-hidden="true">
+
+    <div class="modal fade" id="blogModal2" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="blogModal2Label">Tips Desain Web Elegan</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title">Tips Desain Web Elegan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <p>Desain web yang elegan mengutamakan kesederhanaan, konsistensi, dan penggunaan warna yang harmonis. Gunakan white space secara efektif, pilih font yang mudah dibaca, dan pastikan navigasi mudah diakses. Bootstrap menyediakan banyak komponen yang dapat membantu Anda menciptakan tampilan yang bersih dan profesional.</p>
+            <p>Desain web yang elegan mengutamakan kesederhanaan, konsistensi, dan penggunaan warna yang harmonis.</p>
             <ul>
-              <li>Gunakan warna netral dan aksen</li>
-              <li>Pastikan responsif di semua perangkat</li>
-              <li>Animasi halus untuk interaksi</li>
+              <li>Gunakan warna netral</li>
+              <li>Pastikan responsif</li>
+              <li>Tambahkan animasi halus</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="blogModal3" tabindex="-1" aria-labelledby="blogModal3Label" aria-hidden="true">
+
+    <div class="modal fade" id="blogModal3" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="blogModal3Label">Mengoptimalkan Website</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title">Mengoptimalkan Website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <p>Optimasi website meliputi kecepatan loading, SEO, dan aksesibilitas. Gunakan gambar yang terkompresi, minimalkan penggunaan script yang berat, dan pastikan struktur HTML sesuai standar. Dengan Bootstrap, Anda dapat memanfaatkan komponen yang ringan dan responsif untuk meningkatkan performa website Anda.</p>
+            <p>Optimasi website meliputi kecepatan loading, SEO, dan aksesibilitas.</p>
             <ul>
               <li>Minify CSS & JS</li>
-              <li>Gunakan lazy loading untuk gambar</li>
-              <li>Pastikan aksesibilitas (WCAG)</li>
+              <li>Lazy loading gambar</li>
+              <li>Aksesibilitas sesuai WCAG</li>
             </ul>
           </div>
         </div>
@@ -143,13 +125,16 @@
 
     <!-- About Section -->
     <section id="about" class="container py-5">
-      <div class="about-section mx-auto" style="max-width: 700px;">
-        <h2 class="fw-bold mb-3 text-center"> Christian Johannes Hutahaean</h2>
+      <div class="about-section mx-auto">
+        <h2 class="section-title text-center mb-4">Tentang Saya</h2>
         <div class="d-flex flex-column align-items-center">
-          <img src="https://ui-avatars.com/api/?name=Web+Developer&background=0D8ABC&color=fff&size=128" alt="Avatar" class="rounded-circle mb-3 shadow" width="128" height="128">
-          <p class="text-center mb-1">Halo! Saya adalah seorang pengembang web yang berfokus pada pembuatan website modern dan responsif menggunakan teknologi terbaru seperti Bootstrap, HTML, dan CSS. Saya senang belajar hal baru dan berkomitmen untuk memberikan solusi digital yang elegan dan fungsional.</p>
-          <ul class="list-unstyled text-center mb-0">
-            <li><strong>Nama:</strong> Web Developer</li>
+          <img src="https://ui-avatars.com/api/?name=Christian+Johannes&background=0D8ABC&color=fff&size=128"
+               alt="Foto Profil" class="rounded-circle mb-3 shadow">
+          <p class="text-center">
+            Halo! Saya <strong>Christian Johannes Hutahaean</strong>, seorang pengembang web yang fokus pada pembuatan
+            website modern, responsif, dan elegan menggunakan teknologi terbaru seperti Bootstrap, HTML, dan CSS.
+          </p>
+          <ul class="list-unstyled text-center">
             <li><strong>Email:</strong> developer@email.com</li>
             <li><strong>Keahlian:</strong> HTML, CSS, Bootstrap, UI/UX Design</li>
           </ul>
